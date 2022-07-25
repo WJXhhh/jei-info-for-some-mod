@@ -11,6 +11,8 @@ import mezz.jei.api.ingredients.IIngredientRegistry;
 import mezz.jei.api.recipe.IRecipeCategoryRegistration;
 import mezz.jei.api.recipe.transfer.IRecipeTransferRegistry;
 import net.mcreator.solomon.gui.GuiJuhe;
+import net.minecraft.client.resources.I18n;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Loader;
 import net.tslat.aoa3.common.registration.ItemRegister;
@@ -84,11 +86,22 @@ public class JEI_Compat implements IModPlugin {
     private void registerDescriptions(IModRegistry registry){
         if (Loader.isModLoaded("aoa3")){
             registry.addIngredientInfo(new ItemStack(ItemRegister.GIANT_CRYSTAL,1),ItemStack.class,"suibian");
+            this.addDescriptions(ItemRegister.GIANT_CRYSTAL,registry,"jei.descriptions.giant_crystal");
 
 
         }
 
 
+    }
+
+    /**
+     * 用于为一个物品添加JEI信息
+     * @param item 在此输入要添加JEI信息的物品
+     * @param registry 用于填入被覆写的register方法的register参数
+     * @param key 信息文本的本地化键
+     */
+    private void addDescriptions(Item item, IModRegistry registry,String key){
+        registry.addIngredientInfo(new ItemStack(item,1),ItemStack.class, I18n.format(key));
     }
 
 }
