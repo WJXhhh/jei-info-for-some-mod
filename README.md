@@ -1,5 +1,5 @@
 # JEI more INFO
-####最新版本(version) 1.2.24
+####最新版本(version) 1.2.26
 
 Mod支持语言(Mod supported languages)：中文,English
 
