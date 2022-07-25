@@ -11,10 +11,12 @@ import mezz.jei.api.ingredients.IIngredientRegistry;
 import mezz.jei.api.recipe.IRecipeCategoryRegistration;
 import mezz.jei.api.recipe.transfer.IRecipeTransferRegistry;
 import net.mcreator.solomon.gui.GuiJuhe;
+import net.minecraft.block.Block;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Loader;
+import net.tslat.aoa3.common.registration.BlockRegister;
 import net.tslat.aoa3.common.registration.ItemRegister;
 
 import java.util.IllegalFormatException;
@@ -86,13 +88,18 @@ public class JEI_Compat implements IModPlugin {
     private void registerDescriptions(IModRegistry registry){
         if (Loader.isModLoaded("aoa3")){
             //AOA3 Crystevia
-            this.addDescriptions(ItemRegister.GIANT_CRYSTAL,registry,"jei.des.giant_crystal");
-            this.addDescriptions(ItemRegister.BLUE_DRUSE,registry,"jei.des.blue_druse");
-            this.addDescriptions(ItemRegister.PURPLE_DRUSE,registry,"jei.des.purple_druse");
-            this.addDescriptions(ItemRegister.RED_DRUSE,registry,"jei.des.red_druse");
-            this.addDescriptions(ItemRegister.WHITE_DRUSE,registry,"jei.des.white_druse");
-            this.addDescriptions(ItemRegister.GREEN_DRUSE,registry,"jei.des.green_druse");
-            this.addDescriptions(ItemRegister.YELLOW_DRUSE,registry,"jei.des.yellow_druse");
+
+            this.aDI(ItemRegister.GIANT_CRYSTAL,registry,"jei.des.giant_crystal");
+            this.aDI(ItemRegister.BLUE_DRUSE,registry,"jei.des.blue_druse");
+            this.aDI(ItemRegister.PURPLE_DRUSE,registry,"jei.des.purple_druse");
+            this.aDI(ItemRegister.RED_DRUSE,registry,"jei.des.red_druse");
+            this.aDI(ItemRegister.WHITE_DRUSE,registry,"jei.des.white_druse");
+            this.aDI(ItemRegister.GREEN_DRUSE,registry,"jei.des.green_druse");
+            this.aDI(ItemRegister.YELLOW_DRUSE,registry,"jei.des.yellow_druse");
+
+            this.aDB(BlockRegister.CRYSTAL_EXTENSION_SHRINE,registry,"jei.des.ces");
+
+
 
 
         }
@@ -106,8 +113,18 @@ public class JEI_Compat implements IModPlugin {
      * @param registry 用于填入被覆写的register方法的register参数
      * @param key 信息文本的本地化键
      */
-    private void addDescriptions(Item item, IModRegistry registry,String key){
+    private void aDI(Item item, IModRegistry registry, String key){
         registry.addIngredientInfo(new ItemStack(item,1),ItemStack.class, I18n.format(key));
+    }
+
+    /**
+     * 用于为一个方块添加JEI信息
+     * @param block 在此输入要添加JEI信息的方块
+     * @param registry 用于填入被覆写的register方法的register参数
+     * @param key 信息文本的本地化键
+     */
+    private void aDB(Block block, IModRegistry registry, String key){
+        registry.addIngredientInfo(new ItemStack(block,1),ItemStack.class, I18n.format(key));
     }
 
 }
