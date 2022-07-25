@@ -1,2 +1,9 @@
 jei.recipes.RCO.name=在方块上右键
-jei.descriptions.giant_crystal=用于在能量祭坛上召唤晶体Boss能量构建者。在3.2版本之前，需跟晶体世界的NPC晶体商人用40个紫色水晶和40个红色水晶交易获得。3.2中需要找到精华祭坛，然后向祭坛扔10个任意颜色的水晶，再手持彩虹晶簇右键即可。
+jei.recipes.juhe.name=聚合器
+jei.des.giant_crystal=用于在能量祭坛上召唤晶体Boss能量构建者。在3.2版本之前，需跟晶体世界的NPC晶体商人用40个紫色水晶和40个红色水晶交易获得。3.2中需要找到精华祭坛，然后向祭坛扔10个任意颜色的水晶，再手持彩虹晶簇右键即可。jei.des.giant_crystal=Giant Crystals are used to summon the Crystocore on Power Station.Before version 3.2, you need to trade 40 Purple Crystals and 40 Red Crystals with Crystal Trader in the Crystevia.In 3.2, you need to find the Crystal Extension Shrine, then throw 10 crystals of any color at the Shrine, and then hold the Rainbow Druse and right-click.
+jei.des.blue_druse=击杀飞行概念晶体时有几率掉落。跟晶体商人交易获得。
+jei.des.purple_druse=击杀方位概念晶体有几率掉落。跟晶体商人交易获得。
+jei.des.red_druse=击杀力量概念晶体有几率掉落。跟晶体商人交易获得。
+jei.des.white_druse=击杀抗性概念晶体有几率掉落。跟晶体商人交易获得。
+jei.des.green_druse=击杀恐怖概念晶体有几率掉落。跟晶体商人交易获得。
+jei.des.yellow_druse=击杀速度概念晶体有几率掉落。跟晶体商人交易获得。

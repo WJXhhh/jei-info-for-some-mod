@@ -25,7 +25,7 @@ public class JuheqiRecipeCategory extends AbstractJuheqi<JuheqiRecipe>{
         super(helper);
         background = helper.createDrawable(TEXTURES,4,12,150,60);
         icon = helper.createDrawableIngredient(new ItemStack(BlockJuhesk.block));
-        name = I18n.format("\u805a\u5408\u5668");
+        name = I18n.format("jei.recipes.juhe.name");
     }
 
     @Override

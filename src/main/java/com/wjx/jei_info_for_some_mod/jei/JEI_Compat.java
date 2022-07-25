@@ -85,8 +85,14 @@ public class JEI_Compat implements IModPlugin {
 
     private void registerDescriptions(IModRegistry registry){
         if (Loader.isModLoaded("aoa3")){
-            registry.addIngredientInfo(new ItemStack(ItemRegister.GIANT_CRYSTAL,1),ItemStack.class,"suibian");
-            this.addDescriptions(ItemRegister.GIANT_CRYSTAL,registry,"jei.descriptions.giant_crystal");
+            //AOA3 Crystevia
+            this.addDescriptions(ItemRegister.GIANT_CRYSTAL,registry,"jei.des.giant_crystal");
+            this.addDescriptions(ItemRegister.BLUE_DRUSE,registry,"jei.des.blue_druse");
+            this.addDescriptions(ItemRegister.PURPLE_DRUSE,registry,"jei.des.purple_druse");
+            this.addDescriptions(ItemRegister.RED_DRUSE,registry,"jei.des.red_druse");
+            this.addDescriptions(ItemRegister.WHITE_DRUSE,registry,"jei.des.white_druse");
+            this.addDescriptions(ItemRegister.GREEN_DRUSE,registry,"jei.des.green_druse");
+            this.addDescriptions(ItemRegister.YELLOW_DRUSE,registry,"jei.des.yellow_druse");
 
 
         }

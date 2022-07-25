@@ -1,2 +1,9 @@
 jei.recipes.RCO.name=Right Click On Block
-jei.descriptions.giant_crystal=Giant Crystals are used to summon the Crystocore on Power Station.Before version 3.2, you need to trade 40 Purple Crystals and 40 Red Crystals with Crystal Trader in the Crystevia.In 3.2, you need to find the Crystal Extension Shrine, then throw 10 crystals of any color at the Shrine, and then hold the Rainbow Druse and right-click.
+jei.recipes.juhe.name=juhe
+jei.des.giant_crystal=Giant Crystals are used to summon the Crystocore on Power Station.Before version 3.2, you need to trade 40 Purple Crystals and 40 Red Crystals with Crystal Trader in the Crystevia.In 3.2, you need to find the Crystal Extension Shrine, then throw 10 crystals of any color at the Shrine, and then hold the Rainbow Druse and right-click.
+jei.des.blue_druse=You can kill the Construct Of Flight in the Crystevia to get it,or trade with Crystal Trader.
+jei.des.purple_druse=You can kill the Construct Of Range in the Crystevia to get it,or trade with Crystal Trader.
+jei.des.red_druse=You can kill the Construct Of Strength in the Crystevia to get it,or trade with Crystal Trader.
+jei.des.white_druse=You can kill the Construct Of Resistance in the Crystevia to get it,or trade with Crystal Trader.
+jei.des.green_druse=You can kill the Construct Of Resistance in the Crystevia to get it,or trade with Crystal Trader.
+jei.des.yellow_druse=You can kill the Construct Of Speed in the Crystevia to get it,or trade with Crystal Trader.
