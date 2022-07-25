@@ -18,6 +18,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Loader;
 import net.tslat.aoa3.common.registration.BlockRegister;
 import net.tslat.aoa3.common.registration.ItemRegister;
+import net.tslat.aoa3.common.registration.ToolRegister;
 
 import java.util.IllegalFormatException;
 
@@ -86,8 +87,9 @@ public class JEI_Compat implements IModPlugin {
     }
 
     private void registerDescriptions(IModRegistry registry){
+        //AOA3
         if (Loader.isModLoaded("aoa3")){
-            //AOA3 Crystevia
+            //Crystevia
 
             this.aDI(ItemRegister.GIANT_CRYSTAL,registry,"jei.des.giant_crystal");
             this.aDI(ItemRegister.BLUE_DRUSE,registry,"jei.des.blue_druse");
@@ -96,7 +98,12 @@ public class JEI_Compat implements IModPlugin {
             this.aDI(ItemRegister.WHITE_DRUSE,registry,"jei.des.white_druse");
             this.aDI(ItemRegister.GREEN_DRUSE,registry,"jei.des.green_druse");
             this.aDI(ItemRegister.YELLOW_DRUSE,registry,"jei.des.yellow_druse");
+            //misc
 
+
+
+
+            //Block
             this.aDB(BlockRegister.CRYSTAL_EXTENSION_SHRINE,registry,"jei.des.ces");
 
 
