@@ -11,7 +11,9 @@ import mezz.jei.api.ingredients.IIngredientRegistry;
 import mezz.jei.api.recipe.IRecipeCategoryRegistration;
 import mezz.jei.api.recipe.transfer.IRecipeTransferRegistry;
 import net.mcreator.solomon.gui.GuiJuhe;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Loader;
+import net.tslat.aoa3.common.registration.ItemRegister;
 
 import java.util.IllegalFormatException;
 
@@ -61,6 +63,7 @@ public class JEI_Compat implements IModPlugin {
         }catch (Exception e){
 
         }
+        this.registerDescriptions(registry);
 
     }
 
@@ -77,4 +80,15 @@ public class JEI_Compat implements IModPlugin {
             return "Format Error:"+s ;
         }
     }
+
+    private void registerDescriptions(IModRegistry registry){
+        if (Loader.isModLoaded("aoa3")){
+            registry.addIngredientInfo(new ItemStack(ItemRegister.GIANT_CRYSTAL,1),ItemStack.class,"suibian");
+
+
+        }
+
+
+    }
+
 }
