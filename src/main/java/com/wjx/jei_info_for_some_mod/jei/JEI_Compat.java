@@ -6,19 +6,23 @@ import com.wjx.jei_info_for_some_mod.jei.jeim.RightClickOnBlock.RCO_RecipeCatego
 import com.wjx.jei_info_for_some_mod.jei.jeim.RightClickOnBlock.RCO_RecipeMaker;
 import com.wjx.jei_info_for_some_mod.jei.jeim.solo.juheqi.JuheqiRecipeCategory;
 import com.wjx.jei_info_for_some_mod.jei.jeim.solo.juheqi.JuheqiRecipeMaker;
+import com.wjx.jei_info_for_some_mod.jei.jeim.solo.lianjin.LianJin_RC;
+import com.wjx.jei_info_for_some_mod.jei.jeim.solo.lianjin.LianJin_RM;
 import mezz.jei.api.*;
 import mezz.jei.api.ingredients.IIngredientRegistry;
 import mezz.jei.api.recipe.IRecipeCategoryRegistration;
 import mezz.jei.api.recipe.transfer.IRecipeTransferRegistry;
+import net.mcreator.solomon.block.BlockLiakmion;
 import net.mcreator.solomon.gui.GuiJuhe;
+import net.mcreator.solomon.gui.GuiLeviaswen;
 import net.minecraft.block.Block;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Loader;
+import net.minecraftforge.fml.common.Optional;
 import net.tslat.aoa3.common.registration.BlockRegister;
 import net.tslat.aoa3.common.registration.ItemRegister;
-import net.tslat.aoa3.common.registration.ToolRegister;
 
 import java.util.IllegalFormatException;
 
@@ -27,14 +31,21 @@ import static net.minecraft.util.text.translation.I18n.translateToFallback;
 
 @JEIPlugin
 public class JEI_Compat implements IModPlugin {
+
     @Override
     public void registerCategories(IRecipeCategoryRegistration registry) {
+        Main.logger.info("JEI_Plugin_Loaded1!");
         final IJeiHelpers helpers = registry.getJeiHelpers();
         final IGuiHelper gui = helpers.getGuiHelper();
 
-        registry.addRecipeCategories(new RCO_RecipeCategory(gui));
+
+        if (Loader.isModLoaded("aoa3")){
+            registry.addRecipeCategories(new RCO_RecipeCategory(gui));
+
+        }
         if (Loader.isModLoaded("solomon")){
             registry.addRecipeCategories(new JuheqiRecipeCategory(gui));
+            registry.addRecipeCategories(new LianJin_RC(gui));
 
         }
 
@@ -42,32 +53,24 @@ public class JEI_Compat implements IModPlugin {
 
     @Override
     public void register(IModRegistry registry) {
+		Main.logger.info("JEI_Plugin_Loaded2!");
         final IIngredientRegistry ingredientRegistry = registry.getIngredientRegistry();
         final IJeiHelpers jeiHelpers = registry.getJeiHelpers();
         IRecipeTransferRegistry recipeTransfer = registry.getRecipeTransferRegistry();
-        try {
+
             if (Loader.isModLoaded("aoa3")){
                 registry.addRecipes(RCO_RecipeMaker.getRecipes(jeiHelpers),RecipesCategories.RCO);
                 recipeTransfer.addRecipeTransferHandler(RCO_Container.class,RecipesCategories.RCO,0,1,3,36);
             }
-
-
-
-        }catch (Exception e){
-
-        }
-
-        try {
             if (Loader.isModLoaded("solomon")){
                 Main.logger.info("Solo");
                 registry.addRecipes(JuheqiRecipeMaker.getRecipes(jeiHelpers),RecipesCategories.Juheqi);
+                registry.addRecipes(LianJin_RM.getRecipes(jeiHelpers),RecipesCategories.Lianjin);
                 recipeTransfer.addRecipeTransferHandler(GuiJuhe.GuiContainerMod.class,RecipesCategories.Juheqi,0,1,3,36);
+                recipeTransfer.addRecipeTransferHandler(GuiLeviaswen.GuiContainerMod.class,RecipesCategories.Lianjin,0,1,3,36);
 
             }
 
-        }catch (Exception e){
-
-        }
         this.registerDescriptions(registry);
 
     }
@@ -87,8 +90,21 @@ public class JEI_Compat implements IModPlugin {
     }
 
     private void registerDescriptions(IModRegistry registry){
+        if (Loader.isModLoaded("aoa3")) {
+            AoaSupport(registry);
+        }
+        if (Loader.isModLoaded("solomon")){
+            SolomonSupport(registry);
+        }
+
+
+
+
+    }
+    @Optional.Method(modid = "aoa3")
+    void AoaSupport(IModRegistry registry){
         //AOA3
-        if (Loader.isModLoaded("aoa3")){
+
             //Crystevia
 
             this.aDI(ItemRegister.GIANT_CRYSTAL,registry,"jei.des.giant_crystal");
@@ -109,8 +125,13 @@ public class JEI_Compat implements IModPlugin {
 
 
 
-        }
 
+    }
+
+    @Optional.Method(modid = "solomon")
+    void SolomonSupport(IModRegistry registry){
+
+            this.aDB(BlockLiakmion.block,registry,"jei.des.lianjin");
 
     }
 

@@ -25,6 +25,7 @@ public class Main {
     public void preInit(FMLPreInitializationEvent event)
     {
         logger = event.getModLog();
+		logger.info("Mod_Loaded!");
 
 
     }
