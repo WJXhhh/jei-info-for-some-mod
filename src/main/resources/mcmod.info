@@ -1,8 +1,8 @@
 [
 {
-  "modid": "hkfm_mod",
-  "name": "HongKai for Minecraft",
-  "description": "Example placeholder mod.",
+  "modid": "jeim",
+  "name": "More JEI Info For Some Mod",
+  "description": "More JEI Info For Some Mod",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
