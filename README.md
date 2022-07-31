@@ -12,5 +12,5 @@ Mod支持语言(Mod supported languages)：中文,English
 - 所罗门之钥 (solomon)百科链接：https://www.mcmod.cn/class/5665.html
 
 ###进度：
-- 虚无世界3：对晶体世界内的某些东西添加了。
+- 虚无世界3：对晶体世界内的某些东西添加了注解。
 - 所罗门之钥：添加了目前聚合器、炼金台、锻造台里的所有配方。
