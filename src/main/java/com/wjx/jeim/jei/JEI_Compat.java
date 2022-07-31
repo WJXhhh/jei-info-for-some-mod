@@ -113,23 +113,106 @@ public class JEI_Compat implements IModPlugin {
 
             //Crystevia
 
-            this.aDI(ItemRegister.GIANT_CRYSTAL,registry,"jei.des.giant_crystal");
-            this.aDI(ItemRegister.BLUE_DRUSE,registry,"jei.des.blue_druse");
-            this.aDI(ItemRegister.PURPLE_DRUSE,registry,"jei.des.purple_druse");
-            this.aDI(ItemRegister.RED_DRUSE,registry,"jei.des.red_druse");
-            this.aDI(ItemRegister.WHITE_DRUSE,registry,"jei.des.white_druse");
-            this.aDI(ItemRegister.GREEN_DRUSE,registry,"jei.des.green_druse");
-            this.aDI(ItemRegister.YELLOW_DRUSE,registry,"jei.des.yellow_druse");
+            this.aDIO(ItemRegister.GIANT_CRYSTAL,registry,"jei.des.giant_crystal");
+            this.aDIO(ItemRegister.BLUE_DRUSE,registry,"jei.des.blue_druse");
+            this.aDIO(ItemRegister.PURPLE_DRUSE,registry,"jei.des.purple_druse");
+            this.aDIO(ItemRegister.RED_DRUSE,registry,"jei.des.red_druse");
+            this.aDIO(ItemRegister.WHITE_DRUSE,registry,"jei.des.white_druse");
+            this.aDIO(ItemRegister.GREEN_DRUSE,registry,"jei.des.green_druse");
+            this.aDIO(ItemRegister.YELLOW_DRUSE,registry,"jei.des.yellow_druse");
             //misc
+        this.aDIO(ItemRegister.MAGIC_REPAIR_DUST,registry,"jei.des.magic_rd");
+        this.aDIO(ItemRegister.MAGIC_MENDING_COMPOUND,registry,"jei.des.magic_mc");
+        this.aDIO(ItemRegister.MAGIC_MENDING_SOLUTION,registry,"jei.des.magic_ms");
+        this.aDIO(ItemRegister.CORAL_STONE,registry,"jei.des.coral_s");
+        this.aDIO(ItemRegister.DARKLY_POWDER,registry,"jei.des.darkly_p");
+        this.aDIO(ItemRegister.GHOSTLY_POWDER,registry,"jei.des.ghostly_p");
+        this.aDIO(ItemRegister.ICE_CRYSTAL,registry,"jei.des.ice_c");
+        this.aDIO(ItemRegister.IVORY,registry,"jei.des.ivory");
+        this.aDIO(ItemRegister.JUNGLE_THORNS,registry,"jei.des.jungle_t");
+        this.aDIO(ItemRegister.ORBULON,registry,"jei.des.orbulon");
+        this.aDIO(ItemRegister.RAMMERHEAD_HIDE,registry,"jei.des.rammerhead_h");
+        this.aDIO(ItemRegister.TOXIC_LUMP,registry,"jei.des.toxic_l");
+        this.aDIO(ItemRegister.URKA_HIDE,registry,"jei.des.urka_h");
+        this.aDI(ItemRegister.WHITEWASHING_SOLUTION,registry,"whitewashing_s");
+        this.aDI(ItemRegister.NIGHTMARE_FLAKES,registry,"nightmare_f");
+        //Lands of Runandor
+        this.aDIO(ItemRegister.RUNIC_ENERGY,registry,"jei.des.runic_e");
+        //Gardencia
+        this.aDIO(ItemRegister.SMALL_GREEN_PETAL,registry,"jei.des.small_gp");
+        this.aDIO(ItemRegister.SMALL_ORANGE_PETAL,registry,"jei.des.small_op");
+        this.aDIO(ItemRegister.SMALL_PURPLE_PETAL,registry,"jei.des.small_pp");
+        this.aDIO(ItemRegister.SMALL_RED_PETAL,registry,"jei.des.small_rp");
+        //Lands of Lelyetia
+        this.aDI(ItemRegister.ZHINX_DUST,registry,"zhinx_d");
+        this.aDI(ItemRegister.GHOULASM,registry,"ghoulasm");
+        this.aDI(ItemRegister.PRIMED_GHOULASM,registry,"primed_ghoulasm");
+        //Kai_Bai!
+        this.aDI(ItemRegister.OLD_BOOT,registry,"old_b");
+        this.aDI(ItemRegister.PHANTASM,registry,"phantasm");
+        this.aDI(ItemRegister.PRIMORDIAL_SKULL,registry,"primordial_s");
+        this.aDI(ItemRegister.SMALL_BLUE_PETAL,registry,"small_bp");
+        this.aDI(ItemRegister.DENSE_ROCK,registry,"dense_r");
+        this.aDI(ItemRegister.SHARP_CLAW,registry,"sharp_c");
+        this.aDI(ItemRegister.TORN_CLOTH,registry,"torn_c");
+        this.aDI(ItemRegister.MUSHROOM_SPORES,registry,"mushroom_s");
+        this.aDI(ItemRegister.FLOATING_STONE,registry,"floating_s");
+        this.aDI(ItemRegister.ROSID_ROOT,registry,"rosid_r");
+        this.aDI(ItemRegister.YELLOW_SPORES,registry,"yellow_s");
+        this.aDI(ItemRegister.ORANGE_SPORES,registry,"yellow_s");//描述确实和黄色一模一样
+        this.aDI(ItemRegister.VOID_SCALES,registry,"void_s");
+        this.aDI(ItemRegister.CHITIN,registry,"chitin");
+        this.aDI(ItemRegister.CONFETTI_PILE,registry,"confetti_p");
+        this.aDI(ItemRegister.HARDENED_CONFETTI_BALL,registry,"hardened_cb");
+        this.aDI(ItemRegister.ENCHANTED_GUNPOWDER,registry,"enchanted_g");
+        this.aDI(ItemRegister.FLAMMABLE_DUST,registry,"flammable_d");
+        this.aDI(ItemRegister.MAGNET_SHARD,registry,"magnet_s");
+        this.aDI(ItemRegister.POWER_CORE,registry,"power_c");
+        this.aDI(ItemRegister.SCRAP_METAL,registry,"scrap_m");
+        this.aDI(ItemRegister.STICKY_SLIME,registry,"sticky_s");
+        this.aDI(ItemRegister.UNSTABLE_GUNPOWDER,registry,"unstable_g");
+        this.aDI(ItemRegister.HIVE_CHUNK,registry,"hive_c");
 
 
-
-
+//this.aDI(ItemRegister.,registry,"");
             //Block
-            this.aDB(BlockRegister.CRYSTAL_EXTENSION_SHRINE,registry,"jei.des.ces");
+            this.aDBO(BlockRegister.CRYSTAL_EXTENSION_SHRINE,registry,"jei.des.ces");
+        this.aDB(BlockRegister.AMETHYST_ORE,registry,"amethyst_o");
+        this.aDB(BlockRegister.SAPPHIRE_ORE,registry,"sapphire_o");
+        this.aDB(BlockRegister.BARONYTE_ORE,registry,"baronyte_o");
+        this.aDB(BlockRegister.ELECANIUM_ORE,registry,"elecanium_o");
+        this.aDB(BlockRegister.BLAZIUM_ORE,registry,"blazium_o");
+        this.aDB(BlockRegister.BLOODSTONE_ORE,registry,"bloodstone_o");
+        this.aDB(BlockRegister.BLUE_CRYSTAL_ORE,registry,"blue_co");
+        this.aDB(BlockRegister.CHARGED_RUNIUM_ORE,registry,"charged_ro");
+        this.aDB(BlockRegister.CHESTBONE_FRAGMENTS_ORE,registry,"chest_fo");
+        this.aDB(BlockRegister.CRYSTALLITE_ORE,registry,"crystallite_o");
+        this.aDB(BlockRegister.EMBERSTONE_ORE,registry,"emberstone_o");
+        this.aDB(BlockRegister.FOOTBONE_FRAGMENTS_ORE,registry,"footbone_fo");
+        this.aDB(BlockRegister.GEMENYTE_ORE,registry,"gemenyte_o");
+        this.aDB(BlockRegister.GHASTLY_ORE,registry,"ghastly_o");
+        this.aDB(BlockRegister.GHOULISH_ORE,registry,"ghoulish_o");
+        this.aDB(BlockRegister.GREEN_CRYSTAL_ORE,registry,"green_co");
+        this.aDB(BlockRegister.JADE_ORE,registry,"jade_o");
+        this.aDB(BlockRegister.JEWELYTE_ORE,registry,"jewelyte_o");
+        this.aDB(BlockRegister.LEGBONE_FRAGMENTS_ORE,registry,"legbone_fo");
+        this.aDB(BlockRegister.LIMONITE_ORE,registry,"limonite_o");
+        this.aDB(BlockRegister.LYON_ORE,registry,"lyon_o");
+        this.aDB(BlockRegister.MYSTITE_ORE,registry,"mystite_o");
+        this.aDB(BlockRegister.ORNAMYTE_ORE,registry,"ornamyte_o");
+        this.aDB(BlockRegister.PURPLE_CRYSTAL_ORE,registry,"purple_co");
+        this.aDB(BlockRegister.RED_CRYSTAL_ORE,registry,"red_co");
+        this.aDB(BlockRegister.ROSITE_ORE,registry,"rosite_o");
+        this.aDB(BlockRegister.RUNIUM_ORE,registry,"runium_o");
+        this.aDB(BlockRegister.SHYREGEM_ORE,registry,"shyregem_o");
+        this.aDB(BlockRegister.SHYRESTONE_ORE,registry,"shyrestone_o");
+        this.aDB(BlockRegister.SKULLBONE_FRAGMENTS_ORE,registry,"skullbone_fo");
+        this.aDB(BlockRegister.VARSIUM_ORE,registry,"varsium_o");
+        this.aDB(BlockRegister.WHITE_CRYSTAL_ORE,registry,"white_co");
+        this.aDB(BlockRegister.YELLOW_CRYSTAL_ORE,registry,"yellow_co");
 
 
-
+//this.aDB(BlockRegister.,registry,"");
 
 
     }
@@ -137,7 +220,7 @@ public class JEI_Compat implements IModPlugin {
     @Optional.Method(modid = "solomon")
     void SolomonSupport(IModRegistry registry){
 
-            this.aDB(BlockLiakmion.block,registry,"jei.des.lianjin");
+            this.aDBO(BlockLiakmion.block,registry,"jei.des.lianjin");
 
     }
 
@@ -147,7 +230,8 @@ public class JEI_Compat implements IModPlugin {
      * @param registry 用于填入被覆写的register方法的register参数
      * @param key 信息文本的本地化键
      */
-    private void aDI(Item item, IModRegistry registry, String key){
+    @Deprecated
+    private void aDIO(Item item, IModRegistry registry, String key){
         registry.addIngredientInfo(new ItemStack(item,1),ItemStack.class, I18n.format(key));
     }
 
@@ -157,8 +241,29 @@ public class JEI_Compat implements IModPlugin {
      * @param registry 用于填入被覆写的register方法的register参数
      * @param key 信息文本的本地化键
      */
-    private void aDB(Block block, IModRegistry registry, String key){
+    @Deprecated
+    private void aDBO(Block block, IModRegistry registry, String key){
         registry.addIngredientInfo(new ItemStack(block,1),ItemStack.class, I18n.format(key));
+    }
+
+    /**
+     * 用于为一个物品添加JEI信息
+     * @param item 在此输入要添加JEI信息的物品
+     * @param registry 用于填入被覆写的register方法的register参数
+     * @param key 信息文本的部分本地化键，实际本地化键会为"jei.des" + 参数
+     */
+    private void aDI(Item item, IModRegistry registry, String key){
+        registry.addIngredientInfo(new ItemStack(item,1),ItemStack.class, I18n.format("jei.des"+key));
+    }
+
+    /**
+     * 用于为一个方块添加JEI信息
+     * @param block 在此输入要添加JEI信息的方块
+     * @param registry 用于填入被覆写的register方法的register参数
+     * @param key 信息文本的部分本地化键，实际本地化键会为"jei.des" + 参数
+     */
+    private void aDB(Block block, IModRegistry registry, String key){
+        registry.addIngredientInfo(new ItemStack(block,1),ItemStack.class, I18n.format("jei.des"+key));
     }
 
 }

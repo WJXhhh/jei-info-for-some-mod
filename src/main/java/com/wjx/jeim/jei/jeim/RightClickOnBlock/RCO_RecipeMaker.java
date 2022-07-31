@@ -28,6 +28,7 @@ public class RCO_RecipeMaker {
             jeiRecipes.add(C(ItemRegister.BLUE_GEMSTONES,BlockRegister.BLUE_CRYSTAL_CREATOR,ItemRegister.BLUE_CRYSTAL));
             jeiRecipes.add(C(ItemRegister.WHITE_GEMSTONES,BlockRegister.WHITE_CRYSTAL_CREATOR,ItemRegister.WHITE_CRYSTAL));
             jeiRecipes.add(C(ItemRegister.GREEN_GEMSTONES,BlockRegister.GREEN_CRYSTAL_CREATOR,ItemRegister.GREEN_CRYSTAL));
+            jeiRecipes.add(C(ItemRegister.GHOULASM,BlockRegister.HAUNTING_TABLE,ItemRegister.PRIMED_GHOULASM));
         }
 
 
