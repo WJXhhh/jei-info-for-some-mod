@@ -1,5 +1,5 @@
 # JEI more INFO
-####最新版本(version) 1.2.26
+####最新版本(version) 1.2.29
 
 Mod支持语言(Mod supported languages)：中文,English
 
@@ -13,4 +13,4 @@ Mod支持语言(Mod supported languages)：中文,English
 
 ###进度：
 - 虚无世界3：对晶体世界内的某些东西添加了。
-- 所罗门之钥：添加了目前聚合器里的所有配方。
+- 所罗门之钥：添加了目前聚合器、炼金台、锻造台里的所有配方。
