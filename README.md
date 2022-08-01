@@ -1,5 +1,5 @@
 # JEI more INFO
-####最新版本(version) 1.2.29
+####最新版本(version) 1.2.31
 
 Mod支持语言(Mod supported languages)：中文,English
 
@@ -12,5 +12,5 @@ Mod支持语言(Mod supported languages)：中文,English
 - 所罗门之钥 (solomon)百科链接：https://www.mcmod.cn/class/5665.html
 
 ###进度：
-- 虚无世界3：对晶体世界内的某些东西添加了注解。
+- 虚无世界3：对材料、功能性方块、枪械、杂项物品、矿石等添加了描述
 - 所罗门之钥：添加了目前聚合器、炼金台、锻造台里的所有配方。

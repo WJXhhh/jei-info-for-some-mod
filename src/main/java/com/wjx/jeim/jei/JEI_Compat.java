@@ -26,6 +26,7 @@ import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Optional;
 import net.tslat.aoa3.common.registration.BlockRegister;
 import net.tslat.aoa3.common.registration.ItemRegister;
+import net.tslat.aoa3.common.registration.WeaponRegister;
 
 import java.util.IllegalFormatException;
 
@@ -172,6 +173,53 @@ public class JEI_Compat implements IModPlugin {
         this.aDI(ItemRegister.STICKY_SLIME,registry,"sticky_s");
         this.aDI(ItemRegister.UNSTABLE_GUNPOWDER,registry,"unstable_g");
         this.aDI(ItemRegister.HIVE_CHUNK,registry,"hive_c");
+        this.aDI(ItemRegister.FRAGMENTED_ANIMA_STONE,registry,"fragment_as");
+        this.aDI(ItemRegister.GLISTENING_INFUSION_STONE,registry,"glistening_is");
+        this.aDI(ItemRegister.GLEAMING_INFUSION_STONE,registry,"gleaming_is");
+        this.aDI(ItemRegister.SMALL_SKILL_CRYSTAL,registry,"skill_c");
+        this.aDI(ItemRegister.MEDIUM_SKILL_CRYSTAL,registry,"skill_c");
+        this.aDI(ItemRegister.LARGE_SKILL_CRYSTAL,registry,"skill_c");
+        this.aDI(ItemRegister.GIANT_SKILL_CRYSTAL,registry,"skill_c");
+        this.aDI(ItemRegister.AMBIENT_INFUSION_STONE,registry,"ambient_is");
+        this.aDI(ItemRegister.GLARING_INFUSION_STONE,registry,"glaring_is");
+        this.aDI(ItemRegister.GLOWING_INFUSION_STONE,registry,"glowing_is");
+        this.aDI(ItemRegister.SHINING_INFUSION_STONE,registry,"shining_is");
+        this.aDI(ItemRegister.RADIANT_INFUSION_STONE,registry,"radiant_is");
+        this.aDI(ItemRegister.BLOOMING_INFUSION_STONE,registry,"blooming_is");
+        this.aDI(ItemRegister.GLISTENING_POWER_STONE,registry,"ps");
+        this.aDI(ItemRegister.GLEAMING_POWER_STONE,registry,"ps");
+        this.aDI(ItemRegister.AMBIENT_POWER_STONE,registry,"ps");
+        this.aDI(ItemRegister.GLARING_POWER_STONE,registry,"ps");
+        this.aDI(ItemRegister.GLOWING_POWER_STONE,registry,"ps");
+        this.aDI(ItemRegister.SHINING_POWER_STONE,registry,"ps");
+        this.aDI(ItemRegister.RADIANT_POWER_STONE,registry,"ps");
+        this.aDI(ItemRegister.BLOOMING_POWER_STONE,registry,"ps");
+        this.aDI(WeaponRegister.CORAL_CLOGGER,registry,"coral_c");
+        this.aDI(WeaponRegister.CYCLONE,registry,"cyclone");
+        this.aDI(WeaponRegister.DART_GUN,registry,"dart_g");
+        this.aDI(WeaponRegister.DRACO,registry,"draco");
+        this.aDI(WeaponRegister.DRAGILATOR,registry,"dragilator");
+        this.aDI(WeaponRegister.ELECTINATOR,registry,"electinator");
+        this.aDI(WeaponRegister.FLAMING_FURY,registry,"flaming_f");
+        this.aDI(WeaponRegister.FLOWERS_FURY,registry,"flowers_f");
+        this.aDI(WeaponRegister.FROSTICATOR,registry,"frosticator");
+        this.aDI(WeaponRegister.GARDENER,registry,"gardener");
+        this.aDI(WeaponRegister.GERMINATOR,registry,"germinator");
+        this.aDI(WeaponRegister.MINIGUN,registry,"minigun");
+        this.aDI(WeaponRegister.MK,registry,"mk");
+        this.aDI(WeaponRegister.NETHENGEIC_SLUGGER,registry,"nethengeic_s");
+        this.aDI(WeaponRegister.OVERSHOT,registry,"overshot");
+        this.aDI(WeaponRegister.SPECTACLE,registry,"spectacle");
+        this.aDI(WeaponRegister.WRECKER,registry,"wrecker");
+        this.aDI(WeaponRegister.GAUGE_RIFLE,registry,"gauge_r");
+        this.aDI(WeaponRegister.HAUNTER_RIFLE,registry,"haunter_r");
+        this.aDI(WeaponRegister.LUNAR_ASSAULT_RIFLE,registry,"lunar_ar");
+        this.aDI(WeaponRegister.ROCKER_RIFLE,registry,"rocker_r");
+
+
+
+
+
 
 
 //this.aDI(ItemRegister.,registry,"");
@@ -210,6 +258,26 @@ public class JEI_Compat implements IModPlugin {
         this.aDB(BlockRegister.VARSIUM_ORE,registry,"varsium_o");
         this.aDB(BlockRegister.WHITE_CRYSTAL_ORE,registry,"white_co");
         this.aDB(BlockRegister.YELLOW_CRYSTAL_ORE,registry,"yellow_co");
+        this.aDB(BlockRegister.ENIGMA_TABLE,registry,"enigma_t");
+        this.aDB(BlockRegister.VOX_CRATE,registry,"vox_c");
+        this.aDB(BlockRegister.TEA_SINK,registry,"tea_s");
+        this.aDB(BlockRegister.IRO_CRATE,registry,"iro_c");
+        this.aDB(BlockRegister.EXTRACTION_DEVICE,registry,"extraction_d");
+        this.aDB(BlockRegister.DEEP_CASE,registry,"deep_c");
+        this.aDB(BlockRegister.CREATION_FORGE,registry,"creation_f");
+        this.aDB(BlockRegister.DIVINE_STATION,registry,"divine_s");
+        this.aDB(BlockRegister.INFUSION_TABLE,registry,"infusion_t");
+        this.aDB(BlockRegister.LUNAR_CREATION_TABLE,registry,"lunar_ct");
+        this.aDB(BlockRegister.LUNAR_ENRICHMENT_TABLE,registry,"lunar_et");
+        this.aDB(BlockRegister.MINERALIZATION_STATION,registry,"mineralization_s");
+        this.aDB(BlockRegister.PETAL_CRAFTING_STATION,registry,"petal_cs");
+        this.aDB(BlockRegister.RUNE_RANDOMIZER,registry,"rune_r");
+        this.aDB(BlockRegister.RUNIC_BLOCK,registry,"runic_b");
+        this.aDB(BlockRegister.VOX_STORE_CRATE,registry,"vox_sc");
+        this.aDB(BlockRegister.WHITEWASHING_TABLE,registry,"whitewashing_t");
+
+
+
 
 
 //this.aDB(BlockRegister.,registry,"");
