@@ -416,6 +416,7 @@ public class JEI_Compat implements IModPlugin {
         this.aDI(WeaponRegister.TROLLS_ARCHERGUN,registry,"TROLLS_ARCHERGUN");
         this.aDI(ItemRegister.HYDRO_STONE,registry,"HYDRO_STONE");
         this.aDI(ItemRegister.PURE_WATER_STONE,registry,"PURE_WATER_STONE");
+        this.aDI(ItemRegister.ACTIVE_RUNE_STONE,registry,"ACTIVE_RUNE_STONE");
 
 
 

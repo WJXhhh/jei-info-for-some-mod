@@ -1,5 +1,5 @@
 # JEI more INFO
-####最新版本(version) 1.2.31
+####最新版本(version) 1.2.33
 
 Mod支持语言(Mod supported languages)：中文,English
 
@@ -12,5 +12,5 @@ Mod支持语言(Mod supported languages)：中文,English
 - 所罗门之钥 (solomon)百科链接：https://www.mcmod.cn/class/5665.html
 
 ###进度：
-- 虚无世界3：对材料、功能性方块、枪械、杂项物品、矿石等添加了描述
+- 虚无世界3：完成了对虚无世界3的主线和实用物品的信息添加（包括矿石、武器、祭坛、召唤物、材料、杂物等），以后如果1.12.2的AOA3没有再出新东西，大概就不会继续加东西了
 - 所罗门之钥：添加了目前聚合器、炼金台、锻造台里的所有配方。

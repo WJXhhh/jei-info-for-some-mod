@@ -214,6 +214,7 @@ jei.des.daybreaker_bow=3.2版本之后，武器乐透图腾被移除，需要跟
 jei.des.explosive_bow=击杀下界BOSSbambambam之王有几率掉落。
 jei.des.poison_bow=3.2版本之后，合成配方被移除，击杀真菌蜘蛛有几率掉落。
 jei.des.runic_bow=3.2版本之后，不再通过交易获得，击杀融化BOSS斩首有几率获得。
+jei.des.runic_bo=获取方式：攻击秘境世界符文地牢中无护盾的符文傀儡时会掉落活跃符石，手持活跃符石右键符能祭坛可获取。能够破坏符文傀儡的护盾，会给予敌人缓慢效果。可以摧毁掉落物。（别把符文傀儡掉落的符石炸了）
 jei.des.slingshot=在月球与扎尔爆破手交易获得。
 jei.des.sunshine_bow=在塞尔瑞世界和塞尔瑞射手交易获得。
 jei.des.wither_bow=3.2版本之后，合成配方被移除，击杀凋灵有几率掉落。
@@ -309,7 +310,7 @@ jei.des.skeletal_archergun=击杀传说BOSS骷髅首领有几率掉落。
 jei.des.trolls_archergun=击杀主世界BOSS粉碎有13.8%几率掉落。
 jei.des.hydro_stone=击杀暴风BOSS水能龙蜥召唤的生物水能守护者100%掉落。仅用于破坏水能龙蜥的盾。右键带有盾的水能龙蜥可让水能龙蜥受到50点的伤害。
 jei.des.pure_water_stone=在3.2版本之前由海蝰掉落。作为材料以及制作BOSS召唤物——幼龙之召。（在3.2之后就不能制作了）也可用于召唤暴风世界的另一个BOSS——水能龙蜥。在3.2版本，纯水石需要手持水桶右键符文祭坛上的符文宝珠获得，这样做会使符文宝珠遭受破坏，这也就导致这个符文祭坛将不可用（有四个符文宝珠意味着可以得到四个纯水石）。
-
+jei.des.active_rune_stone=攻击（不是打死）有盾状态下的符文傀儡掉落。
 
 
 
