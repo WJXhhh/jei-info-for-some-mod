@@ -26,9 +26,11 @@ import net.minecraftforge.fml.common.Loader;
 import net.minecraftforge.fml.common.Optional;
 import net.tslat.aoa3.common.registration.BlockRegister;
 import net.tslat.aoa3.common.registration.ItemRegister;
+import net.tslat.aoa3.common.registration.ToolRegister;
 import net.tslat.aoa3.common.registration.WeaponRegister;
 
 import java.util.IllegalFormatException;
+import java.util.Locale;
 
 import static net.minecraft.util.text.translation.I18n.canTranslate;
 import static net.minecraft.util.text.translation.I18n.translateToFallback;
@@ -278,10 +280,142 @@ public class JEI_Compat implements IModPlugin {
         this.aDI(WeaponRegister.SLICE_STAR,registry,"slice_s");
         this.aDI(WeaponRegister.VULKRAM,registry,"vulkram");
         this.aDI(WeaponRegister.CHAKRAM,registry,"chakram");
-
-
-
-
+        this.aDI(WeaponRegister.RUNIC_BOMB,registry,"runic_bo");
+        this.aDI(WeaponRegister.GOO_BALL,registry,"goo_b");
+        this.aDI(WeaponRegister.HELLFIRE,registry,"hellfire");
+        this.aDI(WeaponRegister.CRYSTAL_MAUL,registry,"crystal_m");
+        this.aDI(WeaponRegister.VULCAMMER_MAUL,registry,"vulcammer_m");
+        this.aDI(WeaponRegister.ELECTRON_MAUL,registry,"electron_m");
+        this.aDI(WeaponRegister.PRIMAL_SWORD,registry,"primal_s");
+        this.aDI(WeaponRegister.BARON_SWORD,registry,"baron_s");
+        this.aDI(WeaponRegister.CARAMEL_CARVER,registry,"caramel_c");
+        this.aDI(WeaponRegister.CORALSTORM_SWORD,registry,"CORALSTORM_SWORD");
+        this.aDI(WeaponRegister.CREEPIFIED_SWORD,registry,"CREEPIFIED_SWORD");
+        this.aDI(WeaponRegister.EXPLOCHRON_SWORD,registry,"EXPLOCHRON_SWORD");
+        this.aDI(WeaponRegister.GUARDIANS_SWORD,registry,"GUARDIANS_SWORD");
+        this.aDI(WeaponRegister.HARVESTER_SWORD,registry,"HARVESTER_SWORD");
+        this.aDI(WeaponRegister.HOLY_SWORD,registry,"HOLY_SWORD");
+        this.aDI(WeaponRegister.ILLUSION_SWORD,registry,"ILLUSION_SWORD");
+        this.aDI(WeaponRegister.LEGBONE_SWORD,registry,"LEGBONE_SWORD");
+        this.aDI(WeaponRegister.NETHENGEIC_SWORD,registry,"NETHENGEIC_SWORD");
+        this.aDI(WeaponRegister.ROCKBASHER_SWORD,registry,"ROCKBASHER_SWORD");
+        this.aDI(WeaponRegister.ROCK_PICK_SWORD,registry,"ROCK_PICK_SWORD");
+        this.aDI(WeaponRegister.ROSIDIAN_SWORD,registry,"ROSIDIAN_SWORD");
+        this.aDI(WeaponRegister.RUNIC_SWORD,registry,"RUNIC_SWORD");
+        this.aDI(WeaponRegister.SHROOMUS_SWORD,registry,"SHROOMUS_SWORD");
+        this.aDI(WeaponRegister.SKELETAL_SWORD,registry,"SKELETAL_SWORD");
+        this.aDI(WeaponRegister.TROLL_BASHER_AXE,registry,"TROLL_BASHER_AXE");
+        this.aDI(WeaponRegister.ULTRAFLAME,registry,"ULTRAFLAME");
+        this.aDI(WeaponRegister.VOID_SWORD,registry,"VOID_SWORD");
+        this.aDI(WeaponRegister.BARON_GREATBLADE,registry,"BARON_GREATBLADE");
+        this.aDI(WeaponRegister.CANDY_BLADE,registry,"CANDY_BLADE");
+        this.aDI(WeaponRegister.COTTON_CRUSHER,registry,"COTTON_CRUSHER");
+        this.aDI(WeaponRegister.CRYSTAL_GREATBLADE,registry,"CRYSTAL_GREATBLADE");
+        this.aDI(WeaponRegister.GODS_GREATBLADE,registry,"GODS_GREATBLADE");
+        this.aDI(WeaponRegister.LUNAR_GREATBLADE,registry,"LUNAR_GREATBLADE");
+        this.aDI(WeaponRegister.HAUNTED_GREATBLADE,registry,"HAUNTED_GREATBLADE");
+        this.aDI(WeaponRegister.LYONIC_GREATBLADE,registry,"LYONIC_GREATBLADE");
+        this.aDI(WeaponRegister.NOXIOUS_GREATBLADE,registry,"NOXIOUS_GREATBLADE");
+        this.aDI(WeaponRegister.PRIMORDIAL_GREATBLADE,registry,"PRIMORDIAL_GREATBLADE");
+        this.aDI(WeaponRegister.ROSIDIAN_GREATBLADE,registry,"ROSIDIAN_GREATBLADE");
+        this.aDI(WeaponRegister.SUBTERRANEAN_GREATBLADE,registry,"SUBTERRANEAN_GREATBLADE");
+        this.aDI(WeaponRegister.TIDAL_GREATBLADE,registry,"TIDAL_GREATBLADE");
+        this.aDI(WeaponRegister.DAYBREAKER_BOW,registry,"DAYBREAKER_BOW");
+        this.aDI(WeaponRegister.EXPLOSIVE_BOW,registry,"EXPLOSIVE_BOW");
+        this.aDI(WeaponRegister.POISON_BOW,registry,"POISON_BOW");
+        this.aDI(WeaponRegister.RUNIC_BOW,registry,"RUNIC_BOW");
+        this.aDI(WeaponRegister.SLINGSHOT,registry,"SLINGSHOT");
+        this.aDI(WeaponRegister.SUNSHINE_BOW,registry,"SUNSHINE_BOW");
+        this.aDI(WeaponRegister.WITHER_BOW,registry,"WITHER_BOW");
+        this.aDI(WeaponRegister.BOREIC_BOW,registry,"BOREIC_BOW");
+        this.aDI(WeaponRegister.DEEP_BOW,registry,"DEEP_BOW");
+        this.aDI(WeaponRegister.PRIMORDIAL_BOW,registry,"PRIMORDIAL_BOW");
+        this.aDI(WeaponRegister.SKYDRIVER_BOW,registry,"SKYDRIVER_BOW");
+        this.aDI(WeaponRegister.LIGHTSHINE,registry,"LIGHTSHINE");
+        this.aDI(WeaponRegister.WARLOCK_STAFF,registry,"WARLOCK_STAFF");
+        this.aDI(WeaponRegister.ATLANTIC_STAFF,registry,"ATLANTIC_STAFF");
+        this.aDI(WeaponRegister.CANDY_STAFF,registry,"CANDY_STAFF");
+        this.aDI(WeaponRegister.CONCUSSION_STAFF,registry,"CONCUSSION_STAFF");
+        this.aDI(WeaponRegister.CORAL_STAFF,registry,"CORAL_STAFF");
+        this.aDI(WeaponRegister.CRYSTAL_STAFF,registry,"CRYSTAL_STAFF");
+        this.aDI(WeaponRegister.CRYSTON_STAFF,registry,"CRYSTON_STAFF");
+        this.aDI(WeaponRegister.EVERFIGHT_STAFF,registry,"coral_c");
+        this.aDI(WeaponRegister.EVERMIGHT_STAFF,registry,"coral_c");
+        this.aDI(WeaponRegister.FIREFLY_STAFF,registry,"FIREFLY_STAFF");
+        this.aDI(WeaponRegister.FUNGAL_STAFF,registry,"FUNGAL_STAFF");
+        this.aDI(WeaponRegister.GHOUL_STAFF,registry,"GHOUL_STAFF");
+        this.aDI(WeaponRegister.HAUNTERS_STAFF,registry,"HAUNTERS_STAFF");
+        this.aDI(WeaponRegister.HIVE_STAFF,registry,"HIVE_STAFF");
+        this.aDI(WeaponRegister.JOKER_STAFF,registry,"JOKER_STAFF");
+        this.aDI(WeaponRegister.KAIYU_STAFF,registry,"KAIYU_STAFF");
+        this.aDI(WeaponRegister.LUNAR_STAFF,registry,"LUNAR_STAFF");
+        this.aDI(WeaponRegister.METEOR_STAFF,registry,"METEOR_STAFF");
+        this.aDI(WeaponRegister.NATURE_STAFF,registry,"NATURE_STAFF");
+        this.aDI(WeaponRegister.NIGHTMARE_STAFF,registry,"NIGHTMARE_STAFF");
+        this.aDI(WeaponRegister.NOXIOUS_STAFF,registry,"NOXIOUS_STAFF");
+        this.aDI(WeaponRegister.PHANTOM_STAFF,registry,"PHANTOM_STAFF");
+        this.aDI(WeaponRegister.PRIMORDIAL_STAFF,registry,"PRIMORDIAL_STAFF");
+        this.aDI(WeaponRegister.REEF_STAFF,registry,"REEF_STAFF");
+        this.aDI(WeaponRegister.RUNIC_STAFF,registry,"RUNIC_STAFF");
+        this.aDI(WeaponRegister.SHADOWLORD_STAFF,registry,"SHADOWLORD_STAFF");
+        this.aDI(WeaponRegister.SUN_STAFF,registry,"SUN_STAFF");
+        this.aDI(WeaponRegister.TANGLE_STAFF,registry,"TANGLE_STAFF");
+        this.aDI(WeaponRegister.ULTIMATUM_STAFF,registry,"ULTIMATUM_STAFF");
+        this.aDI(WeaponRegister.WEB_STAFF,registry,"WEB_STAFF");
+        this.aDI(WeaponRegister.WIZARDS_STAFF,registry,"WIZARDS_STAFF");
+        this.aDI(WeaponRegister.VULCANE,registry,"VULCANE");
+        this.aDI(ItemRegister.INCOMPLETE_MECHA_BOW,registry,"INCOMPLETE_MECHA_BOW");
+        this.aDI(ItemRegister.INCOMPLETE_MECHA_CANNON,registry,"INCOMPLETE_MECHA_BOW");
+        this.aDI(ItemRegister.INCOMPLETE_MECHANICAL_ASSAULT_RIFLE,registry,"INCOMPLETE_MECHA_BOW");
+        this.aDI(ItemRegister.INCOMPLETE_MECHA_STAFF,registry,"INCOMPLETE_MECHA_BOW");
+        this.aDI(ItemRegister.INCOMPLETE_MECHYRO,registry,"INCOMPLETE_MECHA_BOW");
+        this.aDI(ItemRegister.INCOMPLETE_MECHA_ARCHERGUN,registry,"INCOMPLETE_MECHA_BOW");
+        this.aDI(ItemRegister.MECHA_GEAR,registry,"MECHA_GEAR");
+        this.aDI(ItemRegister.APOCO_STONE,registry,"APOCO_STONE");
+        this.aDI(ItemRegister.UNCHARGED_STONE,registry,"UNCHARGED_STONE");
+        this.aDI(ItemRegister.GRAVITATOR,registry,"GRAVITATOR");
+        this.aDI(ItemRegister.WORN_BOOK,registry,"WORN_BOOK");
+        this.aDI(ItemRegister.AMPHIBIYTE_LUNG,registry,"AMPHIBIYTE_LUNG");
+        this.aDI(ItemRegister.GOLD_SPRING,registry,"GOLD_SPRING");
+        this.aDI(ItemRegister.HIVE_EGG,registry,"HIVE_EGG");
+        this.aDI(ItemRegister.ANCIENT_RING,registry,"ANCIENT_RING");
+        this.aDI(ItemRegister.BOOK_OF_SHADOWS,registry,"BOOK_OF_SHADOWS");
+        this.aDI(ItemRegister.CALL_OF_THE_DRAKE,registry,"CALL_OF_THE_DRAKE");
+        this.aDI(ItemRegister.EXPLOSIVE_IDOL,registry,"EXPLOSIVE_IDOL");
+        this.aDI(ItemRegister.GUARDIANS_EYE,registry,"GUARDIANS_EYE");
+        this.aDI(ItemRegister.HAUNTED_IDOL,registry,"HAUNTED_IDOL");
+        this.aDI(ItemRegister.HEAVY_BOULDER,registry,"HEAVY_BOULDER");
+        this.aDI(ItemRegister.NETHENGEIC_CALLSTONE,registry,"NETHENGEIC_CALLSTONE");
+        this.aDI(ItemRegister.OBSERVING_EYE,registry,"OBSERVING_EYE");
+        this.aDI(ItemRegister.STARING_EYE,registry,"STARING_EYE");
+        this.aDI(ItemRegister.TOY_GYROCOPTER,registry,"TOY_GYROCOPTER");
+        this.aDI(ItemRegister.TREAT_BAG,registry,"TREAT_BAG");
+        this.aDI(ItemRegister.VOLIANT_HEART,registry,"VOLIANT_HEART");
+        this.aDI(ItemRegister.CANDY_CORN,registry,"CANDY_CORN");
+        this.aDI(ItemRegister.GINGERBREAD_COOKIE,registry,"GINGERBREAD_COOKIE");
+        this.aDI(ItemRegister.GINGERBREAD_WING,registry,"GINGERBREAD_WING");
+        this.aDI(ItemRegister.PEPPERMINT_CANDY,registry,"PEPPERMINT_CANDY");
+        this.aDI(ItemRegister.SPEARMINT_CANDY,registry,"SPEARMINT_CANDY");
+        this.aDI(ItemRegister.SOUR_CANDY,registry,"SOUR_CANDY");
+        this.aDI(ItemRegister.SOUR_GUMMY,registry,"SOUR_GUMMY");
+        this.aDI(ItemRegister.SOUR_POP,registry,"SOUR_POP");
+        this.aDI(ToolRegister.OCCULT_AXE,registry,"OCCULT_AXE");
+        this.aDI(ToolRegister.OCCULT_PICKAXE,registry,"OCCULT_PICKAXE");
+        this.aDI(ToolRegister.OCCULT_SHOVEL,registry,"OCCULT_SHOVEL");
+        this.aDI(ToolRegister.SOULSTONE_AXE,registry,"SOULSTONE_AXE");
+        this.aDI(ToolRegister.SOULSTONE_PICKAXE,registry,"SOULSTONE_AXE");
+        this.aDI(ToolRegister.SOULSTONE_SHOVEL,registry,"SOULSTONE_AXE");
+        this.aDI(ToolRegister.ENERGISTIC_AXE,registry,"SOULSTONE_AXE");
+        this.aDI(ToolRegister.ENERGISTIC_PICKAXE,registry,"SOULSTONE_AXE");
+        this.aDI(ToolRegister.ENERGISTIC_SHOVEL,registry,"SOULSTONE_AXE");
+        this.aDI(ToolRegister.CHAINSAW,registry,"CHAINSAW");
+        this.aDI(ItemRegister.SCREAM_SHIELD,registry,"SCREAM_SHIELD");
+        this.aDI(WeaponRegister.PYRO_ARCHERGUN,registry,"PYRO_ARCHERGUN");
+        this.aDI(WeaponRegister.ROSIDIAN_ARCHERGUN,registry,"TROSIDIAN_ARCHERGUN");
+        this.aDI(WeaponRegister.SKELETAL_ARCHERGUN,registry,"SKELETAL_ARCHERGUN");
+        this.aDI(WeaponRegister.TROLLS_ARCHERGUN,registry,"TROLLS_ARCHERGUN");
+        this.aDI(ItemRegister.HYDRO_STONE,registry,"HYDRO_STONE");
+        this.aDI(ItemRegister.PURE_WATER_STONE,registry,"PURE_WATER_STONE");
 
 
 
@@ -339,6 +473,22 @@ public class JEI_Compat implements IModPlugin {
         this.aDB(BlockRegister.RUNIC_BLOCK,registry,"runic_b");
         this.aDB(BlockRegister.VOX_STORE_CRATE,registry,"vox_sc");
         this.aDB(BlockRegister.WHITEWASHING_TABLE,registry,"whitewashing_t");
+        this.aDB(BlockRegister.ILLUSION_ALTAR,registry,"ILLUSION_ALTAR");
+        this.aDB(BlockRegister.GUARDIAN_ALTAR,registry,"GUARDIAN_ALTAR");
+        this.aDB(BlockRegister.SHADOW_ALTAR,registry,"SHADOW_ALTAR");
+        this.aDB(BlockRegister.VINOCORNE_SHRINE,registry,"VINOCORNE_SHRINE");
+        this.aDB(BlockRegister.ARMY_BLOCK,registry,"ARMY_BLOCK");
+        this.aDB(BlockRegister.BARONESS_ALTAR,registry,"BARONESS_ALTAR");
+        this.aDB(BlockRegister.CLUNKHEAD_ALTAR,registry,"CLUNKHEAD_ALTAR");
+        this.aDB(BlockRegister.CRAEXXEUS_ALTAR,registry,"CRAEXXEUS_ALTAR");
+        this.aDB(BlockRegister.CREEP_ALTAR,registry,"CREEP_ALTAR");
+        this.aDB(BlockRegister.DRACYON_ALTAR,registry,"DRACYON_ALTAR");
+        this.aDB(BlockRegister.GRAW_ALTAR,registry,"GRAW_ALTAR");
+        this.aDB(BlockRegister.HIVE_SPAWNER,registry,"HIVE_SPAWNER");
+        this.aDB(BlockRegister.KROR_ALTAR,registry,"KROR_ALTAR");
+        this.aDB(BlockRegister.MECHBOT_ALTAR,registry,"MECHBOT_ALTAR");
+        this.aDB(BlockRegister.PRIMORDIAL_SHRINE,registry,"PRIMORDIAL_SHRINE");
+
 
 
 
@@ -382,10 +532,11 @@ public class JEI_Compat implements IModPlugin {
      * 用于为一个物品添加JEI信息
      * @param item 在此输入要添加JEI信息的物品
      * @param registry 用于填入被覆写的register方法的register参数
-     * @param key 信息文本的部分本地化键，实际本地化键会为"jei.des" + 参数
+     * @param key 信息文本的部分本地化键，实际本地化键会为"jei.des" + 参数，会自动将大写转小写
      */
     private void aDI(Item item, IModRegistry registry, String key){
-        registry.addIngredientInfo(new ItemStack(item,1),ItemStack.class, I18n.format("jei.des"+key));
+        String key_o = key.toLowerCase();
+        registry.addIngredientInfo(new ItemStack(item,1),ItemStack.class, I18n.format("jei.des."+key_o));
     }
 
     /**
@@ -395,7 +546,7 @@ public class JEI_Compat implements IModPlugin {
      * @param key 信息文本的部分本地化键，实际本地化键会为"jei.des" + 参数
      */
     private void aDB(Block block, IModRegistry registry, String key){
-        registry.addIngredientInfo(new ItemStack(block,1),ItemStack.class, I18n.format("jei.des"+key));
+        registry.addIngredientInfo(new ItemStack(block,1),ItemStack.class, I18n.format("jei.des."+key));
     }
 
 }

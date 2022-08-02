@@ -8,6 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.fml.common.Loader;
 import net.tslat.aoa3.common.registration.BlockRegister;
 import net.tslat.aoa3.common.registration.ItemRegister;
+import net.tslat.aoa3.common.registration.WeaponRegister;
 
 import java.util.List;
 
@@ -29,6 +30,7 @@ public class RCO_RecipeMaker {
             jeiRecipes.add(C(ItemRegister.WHITE_GEMSTONES,BlockRegister.WHITE_CRYSTAL_CREATOR,ItemRegister.WHITE_CRYSTAL));
             jeiRecipes.add(C(ItemRegister.GREEN_GEMSTONES,BlockRegister.GREEN_CRYSTAL_CREATOR,ItemRegister.GREEN_CRYSTAL));
             jeiRecipes.add(C(ItemRegister.GHOULASM,BlockRegister.HAUNTING_TABLE,ItemRegister.PRIMED_GHOULASM));
+            jeiRecipes.add(C(ItemRegister.ACTIVE_RUNE_STONE,BlockRegister.RUNIC_BLOCK, WeaponRegister.RUNIC_BOMB));
         }
 
 
